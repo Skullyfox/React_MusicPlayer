@@ -1,0 +1,18 @@
+<div>
+    <form class="register-form is-secondary" onSubmit="{e => this.onSubmit(e)}" novalidate>
+        <div class="form-field" key={fieldIndex}
+             rt-repeat="field in this.state.fields">
+            <label class="label" for="{field.label}">
+                {field.label}
+            </label>
+            <input class="input" type="{field.type}" name="{field.label}" />
+            <div class="txt-danger" rt-if="field.errors">{field.errors.msg}</div>
+        </div>
+
+        <div class="form-field">
+            <input class="button is-primary is-rounded" type="submit" value="LOGIN">
+        </div>
+    </form>
+
+    <p class="txt-success" rt-if="this.state.success">Registration successful.</p>
+</div>

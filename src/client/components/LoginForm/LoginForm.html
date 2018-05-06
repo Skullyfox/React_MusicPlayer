@@ -1,0 +1,21 @@
+<div>
+    <form class="login-form is-secondary" onSubmit="{e => this.handleSubmit(e)}" novalidate>
+        <div class="form-field">
+            <label class="label" for="username">username</label>
+            <input class="input" type="text" name="username" />
+        </div>
+
+        <div class="form-field">
+            <label class="label" for="password">password</label>
+            <input class="input" type="password" name="password" />
+        </div>
+
+        <div class="form-field">
+            <input class="button is-primary is-rounded" type="submit" value="LOGIN">
+        </div>
+    </form>
+
+    <div class="txt-danger" rt-if="this.state.hasError">
+        {this.state.error}
+    </div>
+</div>

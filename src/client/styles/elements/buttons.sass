@@ -1,0 +1,118 @@
+.button
+    padding: $spacing-2 $spacing-3
+    box-shadow: $boxshadow-1
+    background-color: color(white)
+    border: none
+    margin: $spacing-1
+    font-size: $font-size-2
+    cursor: pointer
+    transition: all 0.3s
+    &.is-small
+        font-size: $font-size-1
+        padding: $spacing-1 $spacing-2
+    &.is-big
+        font-size: $font-size-3
+        padding: $spacing-2 $spacing-3
+    &:not(.is-disabled):hover
+        box-shadow: none
+    &:not(.is-disabled):hover, &.is-active
+        background-color: darken(white, 10%)
+    &.is-rounded
+        border-radius: $border-radius-1
+    &.is-pill
+        border-radius: $border-radius-3
+    &.is-circle
+        border-radius: $border-radius-circle
+        padding: $spacing-3
+    &.is-disabled
+        opacity: 0.5
+        cursor: not-allowed
+    &:focus
+        outline: $border-size-1 darken($foreground, 10%)
+        outline-offset: 1px
+    &.is-outlined
+        background-color: transparent
+        color: $white
+
+    &.is-invisible
+        background-color: transparent
+        border: none
+        box-shadow: none
+        &:hover
+            background-color: transparent
+
+    &.is-primary
+        background-color: $primary
+        color: white
+        &:hover, &.is-active
+            background-color: $primary-dark
+        &:focus
+            outline-color: darken($primary, 10%)
+        &.is-outlined
+            background-color: transparent
+            color: $primary
+            border: $border-size-1 $primary
+            &:hover, &:active
+                color: white
+                background-color: $primary
+
+    &.is-secondary
+        background-color: $secondary
+        color: white
+        &:hover, &.is-active
+            background-color: $secondary-dark
+        &:focus
+            outline-color: darken($secondary, 10%)
+        &.is-outlined
+            background-color: transparent
+            color: $secondary
+            border: $border-size-1 $secondary
+            &:hover, &:active
+                color: white
+                background-color: $secondary
+
+    &.is-accent
+        background-color: $accent
+        color: white
+        &:hover, &.is-active
+            background-color: $accent-dark
+        &:focus
+            outline-color: darken($accent, 10%)
+        &.is-outlined
+            background-color: transparent
+            color: $accent
+            border: $border-size-1 $accent
+            &:hover, &:active
+                color: white
+                background-color: $accent
+
+    &.is-danger
+        background-color: $danger
+        color: white
+        &:hover, &.is-active
+            background-color: darken($danger, 10%)
+        &:focus
+            outline-color: darken($danger, 10%)
+        &.is-outlined
+            background-color: transparent
+            color: $danger
+            border: $border-size-1 $danger
+            &:hover, &:active
+                color: white
+                background-color: $danger
+
+.button-group
+    margin: $spacing-1
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    .button
+        margin: 0
+    &.is-pill
+        .button:first-child
+            border-top-left-radius: $border-radius-3
+            border-bottom-left-radius: $border-radius-3
+        .button:last-child
+            border-top-right-radius: $border-radius-3
+            border-bottom-right-radius: $border-radius-3

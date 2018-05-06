@@ -1,0 +1,10 @@
+<rt-import name="Link" from="react-router-dom"/>
+<div>
+    <header class="header is-big is-secondary txt-white">
+        <h1 class="heading is-6">Welcome, {this.props.activeUser.username} !</h1>
+    </header>
+
+    <main class="section">
+        <button class="button is-accent is-rounded" onClick="() => this.props.actions.logout()">LOGOUT</button>
+    </main>
+</div>
