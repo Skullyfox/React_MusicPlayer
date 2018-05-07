@@ -3,6 +3,6 @@
 const gulp          = require('gulp');
 const runSequence   = require('run-sequence').use(gulp);
 
-gulp.task('build',cb => runSequence('clean', 'sass', 'bundleJS', 'serve', 'watch'));
+gulp.task('build',cb => runSequence('clean', 'sass', 'bundleJS', 'serve'));
 
-gulp.task('default', ['build']);
+gulp.task('default', cb => runSequence('build', 'watch'));

@@ -47,6 +47,7 @@ export default class AuthService {
     * Logs out the user.
     */
     static async logout() {
+        console.log(localStorage);
         localStorage.removeItem('token');
         localStorage.removeItem('uid');
         await store.actions.logout();

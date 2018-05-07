@@ -4,7 +4,7 @@
   "description": "Boilerplate code for applications using React and NodeJS",
   "main": "index.js",
   "scripts": {
-    "dev": "node node_modules/nodemon/bin/nodemon.js server.js",
+    "serve": "node node_modules/nodemon/bin/nodemon.js server.js",
     "watch": "node node_modules/gulp/bin/gulp",
     "buildDB": "node config/buildDB.js"
   },

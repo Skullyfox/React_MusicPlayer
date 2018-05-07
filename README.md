@@ -30,7 +30,7 @@ Il vous faudra d'abord créer un fichier .env dans le dossier config. Pour ce fa
 * PORT = e port souhaité pour lancer le serveur. ex: 8000
 * SESSION_SECRET = une chaine de caractères quelconque
 * TOKEN_SECRET = une chaine de caractères quelconque
-* APP_URL = l'adresse de votre application. Dans un environnement de développement : http://localhost:8000 par exemple
+* APP_URL = l'adresse de votre application. Dans l'environnement de développement, afin de faire marcher le rafraichissement automatique du navigateur, rentrez "http://localhost:3000"
 * DB_HOST = votre hote de BSS MySQL. ex: "localhost"
 * DB_NAME = le nom de votre base de données. Afin d'utiliser l'application de démonstration, rentrez "node_react_sample_db"
 * DB_USER = votre nom d'utilisateur mysql. ex: "root"
@@ -44,10 +44,9 @@ npm run buildDB
 ```
 
 Lancement
-Ouvrez deux lignes de commande et rentrez-y respectivement, après avoir navigué dans le dossier du projet :
+Pour builder, lancer le serveur et update le build à chaque changement de fichier, ouvrez deux terminaux et lancez respectivement
 ```
-npm run dev
-
+npm run serve
 npm run watch
 ```
 -----
