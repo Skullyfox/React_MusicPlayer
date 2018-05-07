@@ -36,7 +36,7 @@ const LoggedOutRoute = subscribe(store)(class LoggedOutRoute extends React.Compo
                 render={ props =>
                     !this.props.authenticated
                         ? <Component {...props} />
-                    : <Redirect to={{pathname: '/profile', state: {from: this.props.location}}} />
+                        : <Redirect to={{pathname: '/profile', state: {from: this.props.location}}} />
                 }
             />
         )
