@@ -11,6 +11,5 @@ import ReactDOM         from "react-dom";
 
 import AppContainer     from "./containers/AppContainer.jsx";
 
-const mountNode = document.getElementById("app");
-
-ReactDOM.render(<AppContainer />, mountNode);
+window.FontAwesomeConfig={searchPseudoElements:true}
+ReactDOM.render(<AppContainer />, document.getElementById("app"));
