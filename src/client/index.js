@@ -9,7 +9,7 @@ import "babel-polyfill";
 import React            from "react";
 import ReactDOM         from "react-dom";
 
-import AppContainer     from "./containers/AppContainer.jsx";
+import App     from "./App.js";
 
 window.FontAwesomeConfig={searchPseudoElements:true}
-ReactDOM.render(<AppContainer />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
