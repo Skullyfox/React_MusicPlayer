@@ -4,7 +4,7 @@
  * @author Daria <lo.pennequin@gmail.com>
  */
 
-import AuthService from '../../services/Authservice.js';
+import AuthService from '../../services/AuthService.js';
 
 export default {
     login: () => state => ({ authenticated: true }),

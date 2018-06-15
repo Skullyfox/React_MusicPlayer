@@ -25,6 +25,6 @@ export default function () {
         'value': 'LOGIN'
     }))), this.state.hasError ? React.createElement('div', {
         'className': 'txt-danger',
-        'key': '626'
-    }, '\r\n        ', this.state.error, '\r\n    ') : null);
+        'key': '609'
+    }, '\n        ', this.state.error, '\n    ') : null);
 }

@@ -10,7 +10,7 @@ import { Route, Switch }                          from 'react-router-dom';
 import { subscribe }                     from 'react-contextual'
 import store                             from './store/store';
 
-import AuthService                       from './services/Authservice.js';
+import AuthService                       from './services/AuthService.js';
 import UserModel                         from './models/UserModel.js';
 import { PrivateRoute, LoggedOutRoute }  from './components/Routes/Routes.jsx';
 import Home                              from './pages/Home/Home.jsx';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as _ from 'lodash';
-import AuthService from '../../services/Authservice.js';
+import AuthService from '../../services/AuthService.js';
 export default function () {
     function onClick1() {
         AuthService.logout();

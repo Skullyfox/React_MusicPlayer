@@ -8,13 +8,13 @@ export default function () {
         }, React.createElement('label', {
             'className': 'label',
             'htmlFor': field.label
-        }, '\r\n                ', field.label, '\r\n            '), React.createElement('input', {
+        }, '\n                ', field.label, '\n            '), React.createElement('input', {
             'className': 'input',
             'type': field.type,
             'name': field.label
         }), field.errors ? React.createElement('div', {
             'className': 'txt-danger',
-            'key': '402'
+            'key': '394'
         }, field.errors.msg) : null);
     }
     return React.createElement('div', {}, React.createElement.apply(this, [
@@ -32,6 +32,6 @@ export default function () {
         }))
     ]), this.state.success ? React.createElement('p', {
         'className': 'txt-success',
-        'key': '646'
+        'key': '630'
     }, 'Registration successful.') : null);
 }
