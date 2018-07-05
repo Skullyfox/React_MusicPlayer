@@ -315,6 +315,34 @@ a, a:hover, a:visited {
     .container {
       max-width: 900px; } }
 
+#PlayerPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#PlayerContainer {
+  border: 1px solid #222; }
+
+#PlayerControl {
+  padding: 10px; }
+  #PlayerControl .controls {
+    height: 50px;
+    width: 350px;
+    border: 1px solid #444; }
+
+#PlayerCurrentInfos {
+  padding: 10px; }
+  #PlayerCurrentInfos h1 {
+    font-size: 2em;
+    text-align: center; }
+  #PlayerCurrentInfos .albumCover {
+    height: 350px;
+    width: 350px;
+    border: 1px solid #444; }
+
 html {
   font-size: 12px; }
   @media screen and (min-width: 350px) {
