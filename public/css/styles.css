@@ -329,9 +329,20 @@ a, a:hover, a:visited {
 #PlayerControl {
   padding: 10px; }
   #PlayerControl .controls {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     height: 50px;
     width: 350px;
     border: 1px solid #444; }
+    #PlayerControl .controls .controlButton {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all .3s;
+      font-size: 1.8em; }
+      #PlayerControl .controls .controlButton:hover {
+        color: rgba(102, 102, 102, 0.3); }
 
 #PlayerCurrentInfos {
   padding: 10px; }
