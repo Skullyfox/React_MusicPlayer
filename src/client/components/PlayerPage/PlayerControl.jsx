@@ -26,9 +26,21 @@ class PlayerControl extends Component {
                     <div className="controlButton">
                         <i className="fas fa-step-backward"></i>
                     </div>
-                    <div className="controlButton" onClick={this.playOrPause}>
-                        <i className={"fas " + (this.state.onListen ? 'fa-pause' : 'fa-play')}></i>
+
+                    <div    className={"controlButton "+ (this.state.onListen ? 'hidden' : '')} 
+                            onClick={this.playOrPause}>
+
+                        <i className="fas fa-play "></i>
+
                     </div>
+
+                    <div    className={"controlButton " + (this.state.onListen ? ' ' : 'hidden')} 
+                            onClick={this.playOrPause}>
+
+                        <i className="fas fa-pause"></i>
+                        
+                    </div>
+
                     <div className="controlButton">
                         <i className="fas fa-stop"></i>
                     </div>

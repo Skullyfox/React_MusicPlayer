@@ -343,6 +343,8 @@ a, a:hover, a:visited {
       font-size: 1.8em; }
       #PlayerControl .controls .controlButton:hover {
         color: rgba(102, 102, 102, 0.3); }
+      #PlayerControl .controls .controlButton.hidden {
+        display: none; }
 
 #PlayerCurrentInfos {
   padding: 10px; }
